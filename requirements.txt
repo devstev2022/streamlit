@@ -1,3 +1,4 @@
 selenium
-PIL
+Pillow
 ChromeDriverManager
+webdriver_manager
