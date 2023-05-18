@@ -1,0 +1,4 @@
+selenium
+Pillow
+ChromeDriverManager
+webdriver_manager
