@@ -9,7 +9,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 import io
 import time
 
-def get_driver():
+def get_driver(options):
     return webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
 service = Service(executable_path=ChromeDriverManager().install())
@@ -26,7 +26,7 @@ options.add_experimental_option("excludeSwitches", ["enable-automation"])
 options.add_experimental_option('useAutomationExtension', False)
 options.add_argument('--disable-blink-features=AutomationControlled')
 
-driver = get_driver()
+driver = get_driver(options)
 # Get the current Streamlit session
 imagePlaceholder = st.empty()
 errorMessage = st.empty()
