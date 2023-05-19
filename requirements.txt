@@ -1,4 +1,3 @@
 streamlit
 webdriver_manager
 seleniumbase
-ChromeDriverManager
