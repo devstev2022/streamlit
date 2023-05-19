@@ -9,7 +9,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 import io
 import time
 
-@st.experimental_singleton
+@st.cache_resource
 def get_driver():
     return webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
