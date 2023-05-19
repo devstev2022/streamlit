@@ -1,4 +1,4 @@
-selenium
-Pillow
-ChromeDriverManager
+streamlit
 webdriver_manager
+seleniumbase
+ChromeDriverManager
